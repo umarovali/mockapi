@@ -23,7 +23,7 @@ getData()
 async function create_data_login_page(user_data) {
   let { data } = await api.post("/users", user_data);
   console.log(data);
-  
+
 }
 
 
@@ -41,16 +41,21 @@ btn.addEventListener("click", (e) => {
     password2: password2.value,
   }
 
-  arrData.map((el) => {
-    if (el.name === data_btn.name) {
-      alert("Bunaqa ismli foydalanuvchi mavjud!")
-    } else if (password.value !== password2.value) {
-      alert("Parol tasdiqlanmadi!")
-    } else if(!(mail.value).endsWith("@gmail.com")){
-      alert("Email notugri kiritildi!")
-    }else{
-      create_data_login_page(data_btn);
-    }
-    }
-  )
+  let cheking = arrData.some(el => el.name === data_btn.name);
+
+  if (!photo.value || !name.value || !mail.value || !password.value || !password2.value) {
+    alert("Barcha maydonlarni toldiring!");
+    return;
+  }
+
+  if (cheking) {
+    alert("Bunaqa ismli foydalanuvchi mavjud!")
+  } else if (password.value !== password2.value) {
+    alert("Parol tasdiqlanmadi!")
+  } else if (!(mail.value).endsWith("@gmail.com")) {
+    alert("Email notugri kiritildi!")
+  } else {
+    create_data_login_page(data_btn);
+    window.location.assign("assets/pages/users.html")
+  }
 })

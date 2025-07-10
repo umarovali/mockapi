@@ -5,11 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/products.css">
 </head>
 
 <body>
 
+    <div class="product_create">
+        <input class="url"
+            value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxA0a0AX1tjavXwFasvcRn9hs_gVte0aGKCQ&s"
+            type="text" placeholder="Url">
+        <input class="title" type="text" placeholder="Title">
+        <textarea class="desc" placeholder="Description"></textarea>
+        <input class="price" type="text" placeholder="Price">
+        <button class="create_btn">Create</button>
+    </div>
+
+    <h1 class="main_title">Продукты</h1>
+
+    <ul class="product_list">
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../JavaScripts/products.js"></script>
 </body>
 
