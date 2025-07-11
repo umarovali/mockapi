@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body{
+  background-color: rgb(171, 110, 228);
+}
+
+.container{
+  width: 500px;
+  padding: 50px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container h1{
+  font-size: 40px;
+}
+
+.container input{
+  border: none;
+  border-bottom: 3px solid rgb(182, 179, 179);
+  font-size: 18px;
+  color: rgb(182, 179, 179);
+  padding: 10px;
+}
+
+.login_here{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  color: rgb(182, 179, 179);
+
+}
+
+.btn{
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: rgb(195, 161, 226);
+
+}
