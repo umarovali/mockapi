@@ -8,6 +8,21 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    padding: 20px 40px;
+    background: rgb(84, 9, 84);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0px 20px;
+}
+
 .id {
     display: none;
 }
